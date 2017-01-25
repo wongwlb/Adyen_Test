@@ -1,8 +1,8 @@
 ---
-title: "Adyen_LoanTest_Final"
+title: "Adyen Loan Test"
 author: "Brandon Wong"
 date: "23 January 2017"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
