@@ -1,6 +1,6 @@
 ---
 title: "Adyen_LoanTest_Final"
-author: "BrandonW"
+author: "Brandon Wong"
 date: "23 January 2017"
 output: html_document
 ---
@@ -103,8 +103,7 @@ Desc(Original_Loan_File$title, main = "Loan Titles", plotit = TRUE)
 
 ### Question 7: Show other interesting insights 
 
-#### The previous question caught my eye, where column "purpose" indicated why people took loans.
-#### As such, I sought to find out what the probability of unpaid loans was among the different loan purposes.
+#### The previous question caught my eye, where column "purpose" indicated why people took loans. As such, I sought to find out what the probability of unpaid loans was among the different loan purposes.
 
 ```{r}
 Original_Loan_File$PaidVsUnpaid <- "Unpaid" # creating a new column and filling
@@ -132,4 +131,4 @@ ggplot(Purpose_Of_Loan, aes(x = purpose, y = loan_amnt, fill = PaidVsUnpaid)) +
   theme(axis.text.x=element_text(size=15, angle = 90))
 ```
 
-### This graph would go to show that educational loans are rather high risk, where almost a quarter (0.25%) of them are unpaid. Thus, the stakeholder might find it wise to limit the instances of educational loans.
+### This graph would go to show that educational loans are rather high risk, where almost a quarter (25%) of them are unpaid. Thus, the stakeholder might find it wise to limit the instances of educational loans.
